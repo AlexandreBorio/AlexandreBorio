@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Borio</title>
+    <!-- Importação da fonte Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,34 +24,34 @@
 
     <main>
         <!-- Seção Sobre Mim -->
-        <section id="sobre" class="section">
-            <h1>Sobre mim</h1>
-            <p>Olá, sou o Borio! Sou empreendedor, proprietário da Borio Store e um grande entusiasta de tecnologia e hardware.</p>
-            <p>Nas horas vagas, gosto de explorar mecânicas avançadas em jogos de alta performance (como Remnant 2 e ARK), jogo Digimon Masters Online e sou um colecionador e apreciador da perfumaria.</p>
+        <section id="sobre" class="section perfil-container">
+            <!-- Coloque o nome do seu arquivo de foto no 'src' (ex: perfil.jpg) -->
+            <img src="minha-foto.jpg" alt="Foto de Alexandre" class="foto-perfil">
+            
+            <h1>Alexandre Borio</h1>
+            
+            <p>Olá, sou o Alexandre! Sou empreendedor, proprietário de e-commerce e um grande entusiasta de tecnologia e ciência no geral.</p>
+            <p>Nas horas vagas(o que é raro) gosto de jogar jogos variados e ter um tempo de lazer com minha namorada.</p>
         </section>
 
-        <!-- Seção Formação -->
+        <!-- Seção da Formação -->
         <section id="formacao" class="section">
             <h1>Formação</h1>
             <ul>
                 <li><strong>Ensino Superior (Cursando):</strong> Análise e Desenvolvimento de Sistemas (ADS) - Início no 2º semestre de 2025.</li>
                 <li><strong>Ensino Superior (Concluído):</strong> Bacharelado em Ciências Biológicas pela Universidade Federal do Paraná (UFPR).</li>
-                <li><strong>Técnico:</strong> Técnico em Química.</li>
+                <li><strong>Técnico (Concluído):</strong> Técnico em Química pelo Centro Educacional de Ensino Profissinal de Curitiba</li>
             </ul>
         </section>
 
-        <!-- Seção Portfólio -->
+        <!-- Seção do Portfólio -->
         <section id="portfolio" class="section">
             <h1>Portfólio</h1>
             <p>Aqui estão alguns dos projetos práticos que venho desenvolvendo:</p>
             <div class="projetos-grid">
                 <div class="projeto-card">
-                    <h3>Calculadora de Plano de Saúde</h3>
-                    <p>Sistema desenvolvido em Python para cálculo automatizado de planos de saúde de acordo com requisitos específicos de negócios.</p>
-                </div>
-                <div class="projeto-card">
                     <h3>Extensão para Chrome (E-commerce)</h3>
-                    <p>Desenvolvimento de uma extensão customizada em JavaScript com integração de API OCR para automação de buscas em marketplaces e verificação de IMEI.</p>
+                    <p>Desenvolvimento de uma extensão customizada em JavaScript com integração de API OCR para automação de buscas em marketplaces e verificação de IMEI de aparelhos telefone.</p>
                 </div>
             </div>
         </section>
@@ -57,7 +59,7 @@
         <!-- Seção Contato -->
         <section id="contato" class="section">
             <h1>Contato</h1>
-            <p>Preencha o formulário abaixo para entrar em contato.</p>
+            <p>Preencha o formulário abaixo para entrar em contato comigo.</p>
             <form id="contact-form">
                 <div class="form-group">
                     <label for="nome">Nome:</label>

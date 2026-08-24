@@ -10,7 +10,7 @@ themeToggleBtn.addEventListener('click', function() {
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', function(event) {
-    // Impede o recarregamento da página (comportamento padrão de envio)
+    // Impede o recarregamento da página
     event.preventDefault();
 
     // Captura os valores dos campos
@@ -18,8 +18,7 @@ contactForm.addEventListener('submit', function(event) {
     const email = document.getElementById('email').value.trim();
     const mensagem = document.getElementById('mensagem').value.trim();
 
-    // Validação básica (o HTML5 já exige preenchimento via atributo 'required', 
-    // mas reforçamos a lógica no JS conforme solicitado na atividade)
+    // Validação básica
     if (nome === '' || email === '' || mensagem === '') {
         alert('Por favor, preencha todos os campos antes de enviar.');
         return;
