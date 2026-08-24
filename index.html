@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <body class="dark-mode"> <!-- Modo Escuro como Padrão -->
     <!-- Menu de Navegação -->
     <header>
         <nav>
@@ -17,7 +18,13 @@
                 <li><a href="#formacao">Formação</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><button id="theme-toggle">Alternar Tema</button></li>
+                <li>
+                    <!-- Novo botão estilo alavanca (switch) -->
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" checked>
+                        <div class="slider round"></div>
+                    </label>
+                </li>
             </ul>
         </nav>
     </header>
@@ -25,7 +32,7 @@
     <main>
         <!-- Seção Sobre Mim -->
         <section id="sobre" class="section perfil-container">
-            <!-- Minha foto ao lado do título -->
+            <!-- Minha Foto ao lado do Título -->
             <img src="minha-foto.jpg" alt="Foto de Alexandre" class="foto-perfil">
             
             <h1>Alexandre Borio</h1>

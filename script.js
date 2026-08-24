@@ -1,9 +1,13 @@
-// Funcionalidade de Alternância de Tema (Claro/Escuro)
-const themeToggleBtn = document.getElementById('theme-toggle');
+// Funcionalidade de Alternância de Tema (Claro/Escuro) com Alavanca
+const toggleSwitch = document.getElementById('checkbox');
 const body = document.body;
 
-themeToggleBtn.addEventListener('click', function() {
-    body.classList.toggle('dark-mode');
+toggleSwitch.addEventListener('change', function(event) {
+    if (event.target.checked) {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+    }
 });
 
 // Validação e Simulação do Formulário de Contato
