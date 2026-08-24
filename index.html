@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Borio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="theme-toggle">Alternar Tema</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section">
+            <h1>Sobre mim</h1>
+            <p>Olá, sou o Borio! Sou empreendedor, proprietário da Borio Store e um grande entusiasta de tecnologia e hardware.</p>
+            <p>Nas horas vagas, gosto de explorar mecânicas avançadas em jogos de alta performance (como Remnant 2 e ARK), jogo Digimon Masters Online e sou um colecionador e apreciador da perfumaria.</p>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="section">
+            <h1>Formação</h1>
+            <ul>
+                <li><strong>Ensino Superior (Cursando):</strong> Análise e Desenvolvimento de Sistemas (ADS) - Início no 2º semestre de 2025.</li>
+                <li><strong>Ensino Superior (Concluído):</strong> Bacharelado em Ciências Biológicas pela Universidade Federal do Paraná (UFPR).</li>
+                <li><strong>Técnico:</strong> Técnico em Química.</li>
+            </ul>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="section">
+            <h1>Portfólio</h1>
+            <p>Aqui estão alguns dos projetos práticos que venho desenvolvendo:</p>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <h3>Calculadora de Plano de Saúde</h3>
+                    <p>Sistema desenvolvido em Python para cálculo automatizado de planos de saúde de acordo com requisitos específicos de negócios.</p>
+                </div>
+                <div class="projeto-card">
+                    <h3>Extensão para Chrome (E-commerce)</h3>
+                    <p>Desenvolvimento de uma extensão customizada em JavaScript com integração de API OCR para automação de buscas em marketplaces e verificação de IMEI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <h1>Contato</h1>
+            <p>Preencha o formulário abaixo para entrar em contato.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Script de validação e interação -->
+    <script src="script.js"></script>
+</body>
+</html>
