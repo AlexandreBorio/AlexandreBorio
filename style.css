@@ -109,10 +109,21 @@ main {
 h1 {
     color: var(--primary-color);
     font-size: 1.8rem;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto; /* O 'auto' nas laterais é o que centraliza o título na página */
     position: relative;
-    display: inline-block;
+    display: block;
+    width: fit-content; /* Faz a largura do bloco se ajustar perfeitamente ao texto */
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: -8px;
+    left: 25%; /* Centraliza a barrinha azul embaixo do texto */
+    border-radius: 2px;
 }
 
 h1::after {
@@ -129,10 +140,6 @@ h1::after {
 /* Configurações Específicas da Seção Perfil */
 .perfil-container {
     text-align: center;
-}
-
-.perfil-container h1::after {
-    left: 25%; /* Centraliza o sublinhado */
 }
 
 .foto-perfil {
